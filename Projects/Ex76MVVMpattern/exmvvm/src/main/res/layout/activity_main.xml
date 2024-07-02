@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <!-- 1. 변수 선언 영역  -->
+    <data>
+        <variable
+            name="vm"
+            type="com.mrhi2024.exmvvm.viewmodel.ItemViewModel" />
+    </data>
+
+    <!-- 2. 화면 UI 구성  -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".view.MainActivity">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="이름"
+            android:inputType="text"
+            android:onTextChanged="@{ (s,a,b,c)-> vm.changeName(s.toString()) }"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="이메일"
+            android:inputType="textEmailAddress"
+            android:onTextChanged="@{ (s,a,b,c)-> vm.changeEmail(s.toString()) }"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="save data"
+            android:onClick="@{ v-> vm.clickedSave() }"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="80dp"
+            android:text="load data"
+            android:onClick="@{ v-> vm.clickedLoad() }"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@{String.format(@string/item_data, vm.model.name, vm.model.email)}"/>
+
+
+    </LinearLayout>
+</layout>
+

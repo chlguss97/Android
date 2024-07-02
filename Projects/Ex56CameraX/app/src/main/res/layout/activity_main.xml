@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- CameraX preview view -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/preview_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!-- 촬영버튼 -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.FloatingActionButton"
+        android:backgroundTint="@color/design_default_color_secondary"
+        app:rippleColor="@color/design_default_color_primary"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="60dp"/>
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ms19"
+        android:layout_margin="60dp"
+        android:background="@color/white"
+        android:padding="4dp"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

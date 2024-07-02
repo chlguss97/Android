@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "223794477157",
+    "project_id": "tpsearchplacehyun",
+    "storage_bucket": "tpsearchplacehyun.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:223794477157:android:241f2ca05feb37ac5cae8c",
+        "android_client_info": {
+          "package_name": "com.hyun.tpsearchplacebykakao"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFIzCfYTwvjBaWb-CcEi9qNmUge9VxKWA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

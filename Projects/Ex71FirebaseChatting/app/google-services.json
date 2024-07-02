@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "446576934961",
+    "project_id": "ex71firebasechattinghyun",
+    "storage_bucket": "ex71firebasechattinghyun.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446576934961:android:4180d6cc85f83618bb1510",
+        "android_client_info": {
+          "package_name": "com.hyun.ex71firebasechatting"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQYVBrZ8qTQ4L7XVYLPkLgJs1kzFsr6o4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

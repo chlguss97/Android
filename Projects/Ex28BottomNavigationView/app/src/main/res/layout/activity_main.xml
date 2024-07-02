@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- 콘텐츠 영역: 프레그먼트들이 놓여질 뷰그룹    -->
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bnv"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@id/bnv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        style="@style/Widget.MaterialComponents.BottomNavigationView"
+        app:menu="@menu/bnv"
+        app:itemTextColor="@color/bnv_item"
+        app:itemIconTint="@color/bnv_item"
+        app:itemBackground="@color/white"
+        app:labelVisibilityMode="selected"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+
+    <EditText
+        android:id="@+id/dialog_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input text"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/dialog_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:backgroundTint="#FF000000">
+
+
+    </Button>
+
+    <TextView
+        android:id="@+id/dialog_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="show data"
+        android:gravity="center"
+        android:padding="8dp"/>
+
+
+</LinearLayout>

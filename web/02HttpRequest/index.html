@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!-- 스타일 적용 : 내부 스타일로 작성 가능 -->
+        <style>
+            /* 이 영역은 CSS언어의 문법체계를 따름 */
+            label{width: 5em; display: inline-block; text-align: right;}
+        </style>
+
+    </head>
+    <body>
+        
+        <h2>This is Http Request Test page</h2>
+
+        <fieldset>
+            <legend>GET METHOD TEST</legend>
+
+            <!-- HTML에서 서버의 다른 문서를 실행시켜주는 요소 : form -->
+            <form action="./aaa.php" method="get">
+                
+                <p>
+                    <label>title:</label>
+                    <input type="text" name="title">
+                    <!-- input요소의 name속성 : .php에 전달할 데이터의 식별자 -->
+                </p>
+                <p>
+                    <label>message:</label>
+                    <input type="text" name="msg">
+                </p>
+
+                <p>
+                    <!-- 이 submit 타입의 버튼을 클릭하면 form요소의 action속성에 써있는 문서가 실행되면서 위 값들을 전달함 -->
+                    <input type="submit" value="보내기">
+                </p>
+
+            </form>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>POST METHOD TEST</legend>
+
+            <form action="./bbb.php" method="post">
+                <p>
+                    <label>아이디 : </label>
+                    <input type="text" name="id">
+                </p>
+                <p>
+                    <label>비밀번호 : </label>
+                    <input type="password" name="pw">
+                </p>
+
+                <p>
+                    <input type="submit" value="로그인">
+                    <input type="reset">
+                </p>
+
+            </form>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Image File Upload</legend>
+
+            <!-- 미디어파일을 전송할때는 반드시 인코딩 타입을 명시해야 함 -->
+            <form action="./ccc.php" method="post" enctype="multipart/form-data">
+                <p>
+                    <label>Image File:</label>
+                    <input type="file" name="img1">
+                </p>
+                <p>
+                    <input type="submit" value="전송">
+                </p>
+                
+            </form>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>POST data with File</legend>
+
+            <form action="./ddd.php" method="post" enctype="multipart/form-data">
+                <p>
+                    <label>제목:</label>
+                    <input type="text" name="title">
+                </p>
+                <p>
+                    <label>메세지:</label>
+                    <textarea name="msg" cols="40" rows="5"></textarea>
+                </p>
+                <p>
+                    <label>첨부파일:</label>
+                    <input type="file" name="img1">
+                </p>
+                
+                <hr>
+
+                <p>
+                    <input type="submit">
+                    <input type="reset">
+                </p>
+            </form>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Load Data</legend>
+
+            <form action="./eee.php" method="get">
+                <input type="submit" value="불러오기">
+            </form>
+
+        </fieldset>
+
+
+
+    </body>
+</html>

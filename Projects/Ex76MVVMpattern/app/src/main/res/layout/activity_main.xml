@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <!-- 1. 변수 선언 영역    -->
+    <data>
+        <variable
+            name="item"
+            type="com.mrhi2024.ex76mvvmpattern.Item" />
+    </data>
+
+    <!-- 2. 화면 UI 구성   -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{item.message}"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="change text"
+            android:onClick="@{ v-> item.changeText() }"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{ String.valueOf(item.age) }"/>
+
+    </LinearLayout>
+
+
+</layout>
+
+

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ExMVVM</string>
+
+    <string name="item_data">%s - %s</string>
+</resources>

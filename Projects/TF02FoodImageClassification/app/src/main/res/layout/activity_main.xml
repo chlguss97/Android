@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/hansic5"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="image classification"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"/>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="총"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_toLeftOf="@id/tv_calorie"
+            android:layout_alignBaseline="@id/tv_calorie"/>
+        <TextView
+            android:id="@+id/tv_calorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="80sp"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kcal"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_toRightOf="@id/tv_calorie"
+            android:layout_alignBaseline="@id/tv_calorie"
+            android:padding="8dp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

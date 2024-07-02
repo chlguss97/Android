@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "108292555365",
+    "project_id": "ex70firestorehyun",
+    "storage_bucket": "ex70firestorehyun.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:108292555365:android:958dd2d0ac032a6fb53c8c",
+        "android_client_info": {
+          "package_name": "com.hyun.ex70firebasefirestoredb"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1hkGQi54Uxmmzozv9vzfOpFchDz0a590"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

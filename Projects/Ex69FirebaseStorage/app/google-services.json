@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "492991526647",
+    "project_id": "ex69firebasestoragehyun",
+    "storage_bucket": "ex69firebasestoragehyun.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492991526647:android:4d6b02d0fd415ac00cc5f2",
+        "android_client_info": {
+          "package_name": "com.hyun.ex69firebasestorage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXz_4s6Vy7_3-4PS7rdnNANTR_RAeP-c4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

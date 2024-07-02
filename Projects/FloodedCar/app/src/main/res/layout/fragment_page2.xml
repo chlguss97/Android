@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/whiteback">
+
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="종합 정보 조회"
+        android:textSize="40sp"
+        android:textColor="#FF9800"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/cookie"/>
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_below="@+id/tv"
+
+        android:src="@drawable/car3"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv"
+        android:layout_marginTop="40dp"
+        android:text="검색하러 가기"
+        android:backgroundTint="#FF9800"
+        android:textSize="24dp"
+        android:paddingLeft="50dp"
+        android:drawableEnd="@drawable/baseline_arrow_outward_24"/>
+
+</RelativeLayout>

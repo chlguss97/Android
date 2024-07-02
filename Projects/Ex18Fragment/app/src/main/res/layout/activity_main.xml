@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView inside MainActivity"
+        android:textColor="@color/black"/>
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="change text"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="change text to the MyFragment"
+        android:backgroundTint="#FF008800"/>
+
+    <!-- 프레그먼트를 <>태그문으로 액티비티에 추가하기  -->
+    <!-- 단점. 동적으로 추가/제거/변경이 불가능함.   -->
+    <fragment
+        android:id="@+id/frag"
+        android:name="com.hyun.ex18fragment.MyFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_my"/>
+
+
+
+
+</LinearLayout>

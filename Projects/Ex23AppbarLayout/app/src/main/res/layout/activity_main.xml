@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="AppBarLayout"
+            app:layout_scrollFlags="scroll|enterAlways"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="scrollable"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <!--  콘텐츠 영역에 스크롤이 되는 뷰를 배치하면.. 스크롤할때 AppBarLayout이 같이 스크롤됨  -->
+    <!-- NestedScrollView or RecyclerView   -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:background="#FFFF0000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:background="#FF00FF00"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:background="#FF0000FF"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

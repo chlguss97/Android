@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:background="#FFFF0000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:background="#FF00FF00"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:background="#FF0000FF"/>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bab"
+        style="@style/Widget.MaterialComponents.BottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="bottom"
+        app:menu="@menu/bab"
+        app:fabAlignmentMode="center"
+        app:navigationIcon="@drawable/baseline_add_shopping_cart_24"
+        app:hideOnScroll="true"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        style="@style/Widget.MaterialComponents.FloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/black"
+        app:layout_anchor="@id/bab"
+        android:src="@drawable/baseline_add_shopping_cart_24"
+        android:tint="@null"
+        app:rippleColor="#FFFFFF00"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,8 @@
+touch .gitignore
+echo "*.iml" >> .gitignore
+echo ".gradle/" >> .gitignore
+echo "local.properties" >> .gitignore
+echo ".idea/" >> .gitignore
+echo "build/" >> .gitignore
+echo "*.keystore" >> .gitignore
+echo ".DS_Store" >> .gitignore

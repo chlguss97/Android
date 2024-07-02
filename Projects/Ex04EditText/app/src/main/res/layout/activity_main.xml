@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- inputType 속성 실습 -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input data"
+        android:inputType="textCapSentences" />
+
+
+    <!--  여러줄 입력  -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="여러줄 입력"
+        android:inputType="textMultiLine"
+        android:lines="3" />
+
+
+    <!-- 여러줄 입력2    -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="여러줄 입력2"
+        android:inputType="textMultiLine"
+        android:maxLines="3" />
+
+
+    <!-- 입력 글자수 제한 , 글자수로 너비를 지정  -->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="글자수 제한"
+        android:inputType="text"
+        android:maxLength="10" />
+
+    <!-- 입력박스에 아이콘 지정   -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/baseline_favorite_24" />
+
+
+    <!-- 배경이미지 변경 - 색상   -->
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:background="#00FF00"
+        android:hint="글입력"
+        android:gravity="top"
+        android:padding="8dp"/>
+
+
+    <!-- 배경이미지 변경 - 이미지  -->
+
+    <!-- 입력상자를 옆으로 여러개 배치해보기 - 예) 전화번호 입력박스   -->
+    <!-- 전체 LinearLayout은 수직배치임.. 이를 변경할 수는 없음   -->
+    <!-- 중첩 LinearLayout으로 수평배치를 포함하도록        -->
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ms18"
+        android:gravity="top"
+        android:hint="글입력"
+        android:padding="8dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="3"
+            android:maxLength="3"
+            android:inputType="phone"
+            android:hint="010"
+            android:gravity="center"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="4"
+            android:maxLength="4"
+            android:inputType="phone"
+            android:hint="1234"
+            android:gravity="center"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="4"
+            android:maxLength="4"
+            android:inputType="phone"
+            android:hint="5678"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

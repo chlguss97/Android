@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="예제1"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="예제2"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="예제3"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="예제4"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="예제5"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="예제6"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="예제7"
+        android:padding="8dp"/>
+
+
+    <TextView
+        android:id="@+id/tv8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="예제8"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/tv9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="예제9"
+        android:padding="8dp"/>
+
+
+</LinearLayout>

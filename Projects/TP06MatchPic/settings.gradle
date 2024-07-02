@@ -1,0 +1,2 @@
+rootProject.name = "TP06MatchPic"
+include ':app'

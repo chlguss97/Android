@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dial app 실행"/>
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SMS app 실행"/>
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wep Browser app 실행"/>
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Photo app 실행"/>
+    <Button
+        android:id="@+id/b5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Camera app 실행"/>
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/ground">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="숫자로 하는 야구게임"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#E1D143"
+        android:padding="10dp"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+
+
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="60sp"
+            android:ems="1"
+            android:layout_marginStart="20dp"
+            android:inputType="number"
+            android:background="@drawable/baseball"/>
+
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="60sp"
+            android:ems="1"
+            android:layout_marginStart="20dp"
+            android:inputType="number"
+            android:background="@drawable/baseball"/>
+
+        <EditText
+            android:id="@+id/et3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="60dp"
+            android:ems="1"
+            android:layout_marginStart="20dp"
+            android:inputType="number"
+            android:background="@drawable/baseball"/>
+
+
+
+
+
+    </LinearLayout>
+
+       <Button
+           android:id="@+id/btn"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="15dp"
+           android:layout_margin="5dp"
+           android:text="확인"
+           android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+
+
+
+
+
+
+
+</LinearLayout>
+

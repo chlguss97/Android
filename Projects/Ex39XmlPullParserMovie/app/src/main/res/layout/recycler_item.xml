@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="16dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_margin="4dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/black"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textStyle="bold"
+            android:textColor="#FF008800"
+            android:textSize="24sp"
+            android:padding="8dp"/>
+        <TextView
+            android:id="@+id/tv_move_nm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="영화제목"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:layout_toRightOf="@id/tv_rank"
+            android:padding="8dp"
+            android:layout_marginLeft="8dp"/>
+        <TextView
+            android:id="@+id/tv_open_dt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2024-02-01"
+            android:textSize="18sp"
+            android:layout_below="@id/tv_rank"
+            android:padding="8dp"/>
+        <TextView
+            android:id="@+id/tv_audi_acc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000명"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/design_default_color_primary"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_move_nm"
+            android:padding="8dp"/>
+
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

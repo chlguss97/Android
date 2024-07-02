@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <!-- 규칙1. 스크롤뷰는 자식뷰를 1개만 가질 수 있음. -->
+        <!-- 규칙2. 스크롤뷰 안에 있는 뷰의 높이는 무조건 wrap_content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="#FFFF0000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="#FF00FF00" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="#FF0000FF"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <HorizontalScrollView
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="16dp">
+
+        <!-- 규칙1. 자식뷰는 1개만 가능 -->
+        <!-- 규칙2. 자식뷰는 너비가 무조건 wrap_content -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:background="#FFFF0000"/>
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:background="#FF00FF00"/>
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:background="#FF0000FF"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/penguins"/>
+
+        </HorizontalScrollView>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="스크롤을 마지막으로 이동"/>
+
+
+</LinearLayout>

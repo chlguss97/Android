@@ -1,0 +1,5 @@
+[
+  {"name":"sam","age": 20, "height":  175.5, "address": {"nation": "korea", "city":  "seoul"}},
+  {"name":"robin","age": 23, "height":  170.5, "address": {"nation": "france", "city":  "paris"}},
+  {"name":"hong","age": 25, "height":  165.5, "address": {"nation": "japan", "city":  "tokyo"}}
+]

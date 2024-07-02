@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/whiteback">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="침수차 조회"
+        android:textSize="40dp"
+        android:textColor="#64BFE8"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/cookie"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+       android:id="@+id/til"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="49가8930"
+        android:textColorHint="#B1CFEF"
+        app:helperText="띄어쓰기 없이 차량번호를 입력하세요. 예시) 12가1234 "
+        app:helperTextTextColor="@color/black"
+        android:layout_marginTop="24dp"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="#B1CFEF"
+        app:hintTextColor="#B1CFEF">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:fontFamily="@font/cookie"/>
+
+
+
+
+
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#64BFE8"
+            android:text="확인하기"
+            android:fontFamily="@font/cookie"
+            android:textSize="24sp"
+            android:paddingLeft="50dp"
+            android:drawableEnd="@drawable/baseline_arrow_drop_down_24"/>
+
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
